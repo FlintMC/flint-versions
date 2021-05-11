@@ -17,12 +17,22 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import java.net.URI;
+import java.net.URI
 
 group = "net.flintmc.versions"
 
 flint {
     description = "Minecraft 1.16.5"
+
+    jsonInjections {
+        create("launcher_profiles.json") {
+            inject(file("../launcher_profile.json").readText().replace("\${version}", "1.16.5"))
+            into(".")
+            path("profiles")
+            key("Flint-1.16.5")
+            prettyPrint(true)
+        }
+    }
 
     staticFiles {
         create("version.json") {

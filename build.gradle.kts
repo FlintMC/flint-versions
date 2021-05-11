@@ -22,7 +22,7 @@ plugins {
 }
 
 group = "net.flintmc.versions"
-version = "1.0.0"
+version = System.getenv().getOrDefault("VERSION", "1.0.0")
 
 repositories {
     mavenCentral()
@@ -51,4 +51,6 @@ flint {
 
     authors = arrayOf("LabyMedia GmbH")
     type = net.flintmc.gradle.extension.FlintGradleExtension.Type.LIBRARY
+
+    installJar(false)
 }
