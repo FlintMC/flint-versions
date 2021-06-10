@@ -175,7 +175,7 @@
       "name": "net.flintmc.launcher:flint-launcher:1.0.2"
     },
     {
-      "name": "net.flintmc.installer:launcher-plugin:1.1.12"
+      "name": "net.flintmc.installer:launcher-plugin:2.0.1"
     },
     {
       "name": "com.google.inject:guice:4.2.3"

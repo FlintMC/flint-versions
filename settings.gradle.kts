@@ -21,12 +21,12 @@ rootProject.name = "flint-versions"
 
 pluginManagement {
     plugins {
-        id("net.flintmc.flint-gradle") version "2.10.0"
+        id("net.flintmc.flint-gradle") version "2.11.2"
     }
 
     buildscript {
         dependencies {
-            classpath("net.flintmc", "flint-gradle", "2.10.0")
+            classpath("net.flintmc", "flint-gradle", "2.11.2")
         }
         repositories {
             maven {

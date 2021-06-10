@@ -45,7 +45,7 @@ subprojects {
 }
 
 flint {
-    flintVersion = "2.0.36"
+    flintVersion = "2.0.48"
 
     projectFilter { true }
 
